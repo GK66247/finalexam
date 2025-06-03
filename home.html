@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>College Science and Technology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="image/icon.jpg">
+
+    <style>
+        body {
+            background-color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: darkblue;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: #28b463;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px darkblue;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .gallery {
+            border: 2px solid gold;
+            margin: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .desc {
+            padding: 10px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 6px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #28b463;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <marquee behavior="slide" direction="left" scrollamount="8">
+            <img src="image/banner.jpg" style="width:100%;">
+        </marquee>
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html" target="_blank">News</a></li>
+        <li><a href="faculty.html" target="_blank">Faculty Members</a></li>
+        <li><a href="Professional Training.html" target="_blank">Professional Training</a></li>
+        <li><a href="Videos.html" target="_blank">Videos CoST</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Degree Programs</a>
+            <div class="dropdown-content">
+                <a href="IT.html" target="_blank">Information Technology <i style="color:darkblue;">Since 2003</i></a>
+                <a href="CS.html" target="_blank">Computer Science <i style="color:darkblue;">Since 2003</i></a>
+                <a href="ETC.html" target="_blank">Electronics and Technology <i style="color:darkblue;">Since 2003</i></a>
+                <a href="GDM.html" target="_blank">Graphic Design And Multimedia <i style="color:red;">New 2026</i></a>
+                <a href="BMIT.html" target="_blank">Business Management Information Technology <i style="color:red;">New 2026</i></a>
+                <a href="NECS.html" target="_blank">Network Engineering and Cyber Security <i style="color:red;">New 2026</i></a>
+                <a href="DSAI.html" target="_blank">Data Science and Artificial Intelligence <i style="color:red;">New 2026</i></a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Computer Labs</a>
+            <div class="dropdown-content">
+                <a href="Lab 1.html" target="_blank">Multimedia Lab</a>
+                <a href="Lab 2.html" target="_blank">E-learning Lab</a>
+                <a href="Lab 3.html" target="_blank">Networking Lab</a>
+                <a href="Lab 4.html" target="_blank">IT Center Lab</a>
+            </div>
+        </li>
+    </ul>
+
+    <p>
+        ស្វាគមន៍មកកាន់មហាវិទ្យាល័យវិទ្យាសាស្ត្រ និងបច្ចេកវិទ្យានៃសាកលវិទ្យាល័យកម្ពុជា។ សម្រាប់ប្អូនៗសិស្សានុសិស្ស ដែលមានបំណងចង់បន្តការសិក្សាថ្នាក់បរិញ្ញាបត្ររង និងថ្នាក់បរិញ្ញាបត្រ។ សូមចុះឈ្មោះជាមួយយើងឥឡូវនេះ ឬអាចអញ្ជើញមកកាន់សាកលវិទ្យាល័យផ្ទាល់ក៏បាន។<br>
+        Welcome to College of Science and Technology of The University of Cambodia. For everyone who wishes to pursue for any AA and BA degrees of the study programs, please register now or visit the campus of The University of Cambodia.
+    </p>
+
+    <div style="text-align:center">
+        <h2>Study Activities in CoST</h2>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="responsive"><div class="gallery"><a href="image/a.jpg" target="_blank"><img src="image/a.jpg" alt="Web Dev"></a><div class="desc">Web Development - HTML CSS</div></div></div>
+    <div class="responsive"><div class="gallery"><a href="image/b.JPG" target="_blank"><img src="image/b.JPG" alt="Multimedia Lab"></a><div class="desc">Studying Multimedia Lab</div></div></div>
+    <div class="responsive"><div class="gallery"><a href="image/c.jpg" target="_blank"><img src="image/c.jpg" alt="IT Center Lab"></a><div class="desc">Studying IT-Center Lab</div></div></div>
+    <div class="responsive"><div class="gallery"><a href="image/d.jpg" target="_blank"><img src="image/d.jpg" alt="Graduation"></a><div class="desc">Graduation 2025</div></div></div>
+
+    <div class="clearfix"></div>
+
+    <h1 style="color:white; background-color:darkblue;">
+        <marquee behavior="scroll" direction="right" scrollamount="8">
+            <img src="image/cost.jpg" style="width:130px;height:50px;"> ស្វាគមន៏! IT EXPERT College Science and Technology
+        </marquee>
+    </h1>
+
+    <div style="text-align:center">
+        <h2>Computer Labs College CoST</h2>
+    </div>
+
+    <!-- More Gallery Items -->
+    <div class="responsive"><div class="gallery"><a href="image/e.jpg" target="_blank"><img src="image/e.jpg" alt="Multimedia Lab"></a><div class="desc">Multimedia Lab</div></div></div>
+    <div class="responsive"><div class="gallery"><a href="image/f.jpg" target="_blank"><img src="image/f.jpg" alt="Networking Lab"></a><div class="desc">Networking Lab</div></div></div>
+    <div class="responsive"><div class="gallery"><a href="image/g.jpg" target="_blank"><img src="image/g.jpg" alt="IT Center Lab"></a><div class="desc">IT-Center Lab</div></div></div>
+    <div class="responsive"><div class="gallery"><a href="image/h.jpg" target="_blank"><img src="image/h.jpg" alt="Update"></a><div class="desc">IT-Center Update</div></div></div>
+
+    <div class="clearfix"></div>
+
+    <div class="footer">
+        <img src="image/uc.png" width="50" height="40">
+        <p>Copyright © University of Cambodia</p>
+    </div>
+</body>
+</html>
